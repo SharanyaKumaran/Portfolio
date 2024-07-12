@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pro.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- OVERLAY -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                  <a href="#" class="nav__logo"><span class="nav-name-logo">S</span><span class="name_second">haranya Kumaran</span></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="l-main bd-grid">
+            <div class="home">
+                <div class="home__information">
+                    <span class="home__pressent anime-text">Hello, I'm</span>
+                    <h1 class="home__title anime-text">Sharanya</h1>
+                    <p class="home__skill">I am a <span class="role"></span></p><br><br>
+                    <button>Hire me</button>
+                    <!-- <div>
+                        <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
+                    </div> -->
+                </div>
+
+                <div class="home__img">
+                    <img src="images/My_pic.jfif" alt="SARAN" class="home_pic">
+                </div>
+                
+                <div class="home__social">
+                    <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-mail-id" class="home__social-icon"></ion-icon>
+                </div>
+
+            </div>
+            
+        </main>
+
+        
+       
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="pro.js"></script>
+    
+        <!-- ICONS -->
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+
+         <!-- About me section -->
+         <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/girl_pic.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Dedicated and motivated fresher with a strong passion for coding, problem-solving, and continuous learning. Eager
+                            to enhance my skills and grow my knowledge.</p>
+        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Problem Solving</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>B.Tech IT at SNS College Of Technology</li>
+                                <li><span>2020 - 2021</span><br>Sri Vijay Vidyalaya</li>
+                                <li><span>2018 - 2019</span><br>Sri Vijay Vidyalaya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <!-- Skills Section -->
+
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Technical Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>HTML</h2>
+                <p><img src="images/html-5-icon.png" alt="css"></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>CSS</h2>
+                <p><img src="images/css-icon.png" alt="css"></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>JavaScript</h2>
+                <p><img src="images/js-icon.png" alt=""></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>UI/UX Figma</h2>
+                <p><img src="images/figma.png" alt=""></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Word Press</h2>
+                <p><img src="images/wordpress.png" alt=""></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Java</h2>
+                <p><img src="images/java.png" alt=""></p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Python</h2>
+                <p><img src="images/wordpress.png" alt=""></p>
+                <a href="#">Learn more</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Certificates Section -->
+<!-- <section class="certificates" id="certificates">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title">Certificates</h1>
+            <ul class="certificates-list">
+                <li><img src="images/Cerificate1.jfif" alt=""></li>
+                <li><img src="images/Cerificate2.jfif" alt=""></li>
+                <li><img src="images/Cerificate3.jfif" alt=""></li>
+                <li><img src="images/Cerificate4.jfif" alt=""></li>
+               
+            </ul>
+        </div>
+    </div>
+</section> -->
+<!-- Projeccts Section -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Seminar_SpaCE_Book.jfif">
+                <div class="layer">
+                    <h3>Seminar Space Book</h3>
+                    <p> Created a web platform for seminar hall bookings that effectively manages and processes booking requests with 97%
+                        accuracy. <br>
+                        Streamlined booking with real-time updates and easy access, enhancing user experience.
+                        </p>
+                    <a href="https://github.com/SharanyaKumaran/College-Seminar-Hall-Boking">Click<i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Sign_Language_Detection.jfif">
+                <div class="layer">
+                    <h3>Sign Language Detection</h3>
+                    <p>Developed a hand sign detector and classifier for American Sign Language (ASL).
+                        Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.
+                        Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other</p>
+                    <a href="#">Click<i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Food.png">
+                <div class="layer">
+                    <h3>Food recovery and redistribution</h3>
+                    <p>Designed a Figma model for a food waste management website, facilitating surplus food donations to orphanages and old
+                        age homes
+                        Streamlined the donation process, reducing food waste and addressing community hunger</p>
+                    <a href="https://github.com/SharanyaKumaran/FOOD-RECOVERY-AND-REDISTRIBUTION">Click<i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</section>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sharanyakr2324@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9345874566</p>
+                <div class="home__social">
+                    <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
+                    <ion-icon name="logo-mail-id" class="home__social-icon"></ion-icon>
+                </div>
+                <a href="https://drive.google.com/file/d/1mUHpj_raKnyptvTJJ2vXCoL5ubNkBvI5/view" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sharanya<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
